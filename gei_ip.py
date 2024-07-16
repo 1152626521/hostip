@@ -6,7 +6,7 @@ from starlette.responses import HTMLResponse
 app = FastAPI()
 
 
-@app.get('/ip', summary="获取IP", description="获取远程调用者ip", response_class=HTMLResponse)
+@app.get('/', summary="获取IP", description="获取远程调用者ip", response_class=HTMLResponse)
 async def api_ip_auth(request: Request):
     return request.client.host
 
