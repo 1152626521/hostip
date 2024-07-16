@@ -19,7 +19,7 @@ async def version():
 if __name__ == '__main__':
     uvicorn.run(app=app,
                 host="0.0.0.0",
-                port=443,
+                port=80,
                 reload=False,
                 # debug=True,
                 # log_config=log.service_log(),
